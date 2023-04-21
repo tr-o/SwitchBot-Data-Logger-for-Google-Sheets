@@ -1,0 +1,1 @@
+# SwitchBot-Data-Logger-for-Google-Sheets
