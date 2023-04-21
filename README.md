@@ -12,7 +12,7 @@ This repository contains a script that fetches data from SwitchBot devices using
 - [Included Files](#included-files)
 - [Usage](#usage)
 - [Important Functions](#important-functions)
-- [Credits and Dependencies](#Credits and Dependencies)
+- [Credits and Dependencies](#credits-and-dependencies)
 
 ## Features
 
