@@ -3,6 +3,16 @@
 This repository contains a script that fetches data from SwitchBot devices using the SwitchBot API and logs the data into separate sheets within a Google Spreadsheet. Each device's data is stored in a separate sheet named after the device.
 ![image](https://user-images.githubusercontent.com/98264095/233547447-6dcff79a-fb5a-4632-b18a-c842a3138794.png)
 
+**Version: 0.1.0**
+
+## Table of Contents
+
+- [Features](#features)
+- [Prerequisites](#prerequisites)
+- [Included Files](#included-files)
+- [Usage](#usage)
+- [Important Functions](#important-functions)
+
 ## Features
 
 - Fetches data from SwitchBot devices using the SwitchBot API
