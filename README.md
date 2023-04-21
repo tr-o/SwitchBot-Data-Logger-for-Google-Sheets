@@ -16,11 +16,14 @@ This repository contains a script that fetches data from SwitchBot devices using
 
 ## Features
 
-- Fetches data from SwitchBot devices using the SwitchBot API
-- Logs temperature, humidity, and battery (currently unavailable) information
-- Stores data in separate sheets within a Google Spreadsheet
-- Creates new sheets for devices when necessary
-- Appends data to existing sheets to maintain a historical record
+- **SwitchBot API Integration**: Fetch data directly from your SwitchBot devices using the SwitchBot API, ensuring up-to-date and accurate information.
+- **Temperature and Humidity Logging**: Record essential data points such as temperature and humidity from your SwitchBot devices for analysis and tracking purposes.
+- **Battery Level Logging**: Monitor battery levels of your devices (currently unavailable) to ensure their uninterrupted operation.
+- **Automatic Sheet Creation**: Automatically generate new sheets for each SwitchBot device, organizing your data in a clear and structured manner.
+- **Historical Data Recording**: Append new data to existing sheets, maintaining a comprehensive historical record of your device's performance.
+- **Google Sheets Compatibility**: Conveniently store and access your logged data in Google Sheets, leveraging the power of Google Workspace.
+- **Customizable Data Logging**: Modify the script to fetch and log additional data points or to suit your specific requirements.
+
 
 ## Prerequisites
 
