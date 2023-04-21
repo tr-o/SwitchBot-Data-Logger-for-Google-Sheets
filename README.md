@@ -12,6 +12,7 @@ This repository contains a script that fetches data from SwitchBot devices using
 - [Included Files](#included-files)
 - [Usage](#usage)
 - [Important Functions](#important-functions)
+- [Credits and Dependencies](#Credits and Dependencies)
 
 ## Features
 
@@ -46,5 +47,9 @@ This repository contains a script that fetches data from SwitchBot devices using
 - `main_append_data_separate_sheets()`: The main function that fetches device data and writes it to the Google Spreadsheet.
 - `getDeviceStatus(deviceId, headers)`: Fetches the status data (temperature, humidity, and battery level) for a specific device.
 - `writeToSpreadsheet(deviceId, deviceName, temperature, humidity, battery)`: Logs the device data into a Google Spreadsheet, creating a new sheet if necessary.
+
+## Credits and Dependencies
+
+This project relies on the [SwitchBot API](https://github.com/OpenWonderLabs/SwitchBotAPI) by [OpenWonderLabs](https://github.com/OpenWonderLabs). The SwitchBot API is used for fetching data from SwitchBot devices, which is then logged and processed in this project. Please refer to the [SwitchBot API repository](https://github.com/OpenWonderLabs/SwitchBotAPI) for more information and documentation on the API.
 
 
