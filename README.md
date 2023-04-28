@@ -10,9 +10,10 @@ The SwitchBot Data Logger for Google Sheets is designed to collect data from Swi
 
 1. [Features](#features)
 2. [Included Files](#included-files)
-3. [Usage](#usage)
-4. [Automation](#automation)
-5. [Credit and Dependencies](#credit-and-dependencies)
+3. [Important Functions](#important-functions)
+4. [Usage](#usage)
+5. [Automation](#automation)
+6. [Credit and Dependencies](#credit-and-dependencies)
 
 ## Features
 
@@ -51,6 +52,15 @@ To automatically log the data at regular intervals, you can create a time-driven
 6. Save the trigger.
 
 The data logger will now automatically log the data at the specified interval.
+
+## Important Functions
+
+- `getSwitchbotData()`: Fetches data from SwitchBot devices using the SwitchBot API.
+- `getOpenWeatherMap()`: Retrieves weather data from the OpenWeatherMap API.
+- `combineJsonData()`: Combines data from SwitchBot devices and OpenWeatherMap API.
+- `calculateAbsoluteHumidity()`: Calculates absolute humidity based on temperature and relative humidity.
+- `writeDataToOneSheet()`: Writes data to a specified sheet in the Google Sheets document.
+- `writeDataToAllSheets()`: Logs data to all sheets (humidity, temperature, and absolute humidity).
 
 ## Credit and Dependencies
 
