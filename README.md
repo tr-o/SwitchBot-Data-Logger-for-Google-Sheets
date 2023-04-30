@@ -62,6 +62,15 @@ To automatically log the data at regular intervals, you can create a time-driven
 
 The data logger will now automatically log the data at the specified interval.
 
+## Data Visualization
+
+To effectively visualize and analyze the data logged by the SwitchBot Data Logger for Google Sheets, we recommend using the [GAS Dynamic Data Visualizer](https://github.com/tr-o/GAS-Dynamic-Data-Visualizer) project. This web app allows you to create beautiful, responsive line charts for any combination of data sets directly fetched from your Google Sheets document.
+![image](https://user-images.githubusercontent.com/98264095/235333277-da306e60-54a5-46e3-9a08-6a0af136909b.png)
+
+The GAS Dynamic Data Visualizer provides an easy way to filter data by date range, with auto-resizing charts based on window size. It is highly customizable and powered by Google Charts and Google Apps Script, making it a seamless solution for visualizing the data logged by the SwitchBot Data Logger.
+
+To set up the data visualization, follow the instructions in the [GAS Dynamic Data Visualizer repository](https://github.com/tr-o/GAS-Dynamic-Data-Visualizer).
+
 ## Credit and Dependencies
 
 This project is inspired by the work of the OpenAI community and utilizes the following APIs:
