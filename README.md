@@ -45,7 +45,7 @@ The SwitchBot Data Logger for Google Sheets is designed to collect data from Swi
 4. Copy the content of the `dataAquisition.gs` file from this project into the corresponding file in the Apps Script editor.
 5. If you want to use the OpenWeatherMap data, update the `API_KEY` in the `getOpenWeatherMap()` function with your own OpenWeatherMap API key, and uncomment the respective lines in the `writeDataToAllSheets()` function.
 6. Update the `token` and `secret` variables in the `getSwitchbotData()` function with your SwitchBot API key and secret.
-7. Repeat step 4 for the `writeDataToSheet.gs` file.
+7. Copy the content of the `writeDataToSheet.gs` file from this project into the corresponding file in the Apps Script editor.
 8. Create three new sheets in your Google Sheets document with the names "humidity", "temperature", and "absoluteHumidity."
 9. Run the `writeDataToAllSheets()` function in the Apps Script editor to log the data to your Google Sheets document.
 10. To include additional data sources, add the necessary functions to fetch the data and modify the `combineJsonData()` function to include the new data.
