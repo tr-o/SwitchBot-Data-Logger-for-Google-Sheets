@@ -1,12 +1,12 @@
 /*
- * writeDataToSheet.gs
+ * writeDataToSheet.gs version 0.1.3
  * 
  * This file contains the following functions:
  * 
  * - writeDataToAllSheets(): This function writes the combined JSON data to all sheets for the specified
  *   measurements (humidity, temperature, and absoluteHumidity).
  * 
- * - combineJsonData(): This function combines the data from the OpenWeatherMap API and the SwitchBot devices
+ * - combineJsonData(...datasets): This function combines the data from the SwitchBot devices and the opionally other sources like OpenWeatherMap API 
  *   into a single JSON object.
  * 
  * - calculateAbsoluteHumidity(data): This function calculates the absolute humidity for each data point and
@@ -21,9 +21,10 @@
  * names if necessary.
  */
 
-
 function writeDataToAllSheets() {
-  var jsonData = combineJsonData();
+  var data1 = getSwitchbotData();
+  //var data2 = [getOpenWeatherMap()];//uncomment this line when use OpenWeatherMap
+  var jsonData = combineJsonData(data1);//, data2, data3, data4, data5...);
   var list_of_measurements = ["humidity", "temperature", "absoluteHumidity"];
   for (var i = 0; i < list_of_measurements.length; i++) {
     var measurement = list_of_measurements[i];
@@ -31,14 +32,13 @@ function writeDataToAllSheets() {
   }
 }
 
-function combineJsonData(){
-  var data1 = [getOpenWeatherMap()];
-  var data2 = getSwitchbotData();
-  var integratedData = data1.concat(data2);
+function combineJsonData(...datasets) {
+  var integratedData = Array.prototype.concat.apply([], datasets);
   var integratedDataWithAbsoluteHumidity = calculateAbsoluteHumidity(integratedData);
   console.log(integratedDataWithAbsoluteHumidity);
   return integratedDataWithAbsoluteHumidity;
 }
+
 
 function calculateAbsoluteHumidity(data) {
   // Define physical constants
@@ -119,4 +119,24 @@ function writeDataToOneSheet(data, measurement) {
   // Write the new row to the sheet
   sheet.appendRow(newRow);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
